@@ -118,18 +118,31 @@ button img {
     margin-right: 10px;
 }
 
+*, * , * , *{
+    outline: 2px solid coral;
+}
+
 
 
 @media screen and (max-width:600px) {
     .container {
         flex-direction: column;
-        margin: 0;
+        /* margin: 0; */
         width: 100%;
         border: 2px solid;
+        margin: 20px;
         height: auto;
+
+    }
+
+    .product{
+        width: 100%;
+        outline: 2px solid rgb(65, 42, 165);
+        margin: 0;
+        padding: 30px;
     }
 
     .product-btn {
-        width: inherit;
+        width:100%;
     }
 }
