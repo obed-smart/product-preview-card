@@ -17,9 +17,9 @@
 
 body {
     background-color: var(--Cream);
-    height: 100svh;
+    min-height: 100vh;
     width: 100%;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 
     display: flex;
     justify-content: center;
@@ -66,14 +66,15 @@ body {
 .product-detail {
     font-size: 35px;
     /* border: 2px solid coral; */
-    margin: 20px 0 20px 0;
+    margin: 20px 20px 20px 0;
+    font-family: "fraunces";
 }
 
 .product p:nth-of-type(2) {
     font-size: 16px;
     font-weight: 400;
     color: var(--Dark-grayish-blue);
-    margin-right: 60px;
+    margin-right: 40px;
     margin-bottom: 20px;
 }
 
@@ -90,8 +91,9 @@ body {
 
 .product-price span:first-of-type {
     font-size: 35px;
-    color: var(--Verydark-blue);
+    color: var(--Dark-cyan);
     font-weight: 700;
+    font-family: "fraunces";
 }
 
 .product-price span:last-of-type {
@@ -135,10 +137,13 @@ button img {
 
 
 @media screen and (max-width:600px) {
+    body{
+        min-height: 100svh;
+    }
     .container {
         flex-direction: column;
 
-        width: calc(100% - 50px);
+        min-width: 90svw;;
         margin: 20px;
         height: auto;
 
@@ -164,6 +169,10 @@ button img {
         /* outline: 2px solid rgb(65, 42, 165); */
         margin: 0;
         padding: 30px;
+    }
+    .product p:nth-of-type(2){
+      font-size: 18px;
+        font-weight: 400;
     }
 
     .product-btn {
