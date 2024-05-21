@@ -176,6 +176,8 @@ button img {
     .product p:nth-of-type(2) {
         font-size: 18px;
         font-weight: 400;
+    margin-right: 5px;
+
     }
 
     .product-btn {
